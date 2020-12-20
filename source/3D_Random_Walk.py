@@ -12,7 +12,7 @@ global tmax
 
 def Gen_RandLine(length, dims=2):
     global tmax
-    tmax = 1000
+    tmax = 10000
     t = 0
 
     x = [0]

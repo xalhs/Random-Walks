@@ -7,7 +7,9 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 import threading
 
-tmax = 1000
+tmax = 10000
+debug = True
+
 t = 0
 
 x = [0]
@@ -77,16 +79,20 @@ while t < tmax and t_total < tmax:
         #    print([x[t] , y[t]])
         #    print(coord_tuple)
             #print(left_inf)
-            print("left is safe")
+            if debug:
+                print("left is safe")
             safe_t = t
         elif  (up_inf_tuple).intersection(coord_tuple) == set():
-            print("up is safe")
+            if debug:
+                print("up is safe")
             safe_t = t
         elif  (right_inf_tuple).intersection(coord_tuple) == set():
-            print("right is safe")
+            if debug:
+                print("right is safe")
             safe_t = t
         elif  (down_inf_tuple).intersection(coord_tuple) == set():
-            print("down is safe")
+            if debug:
+                print("down is safe")
             safe_t = t
 
     #    safe_t = t
@@ -95,11 +101,13 @@ while t < tmax and t_total < tmax:
     if not available_dir:
         t_diff = t - safe_t
         t = safe_t
-        print("went back " + str(t_diff) + " steps")
+        if debug:
+            print("went back " + str(t_diff) + " steps")
         coodr = coodr[:-(t_diff)]
         x = x[:-(t_diff)]
         y = y[:(-(t_diff))]
-        print("current length " + str(len(x)))
+        if debug:
+            print("current length " + str(len(x)))
     else:
         chosen_dir = random.choice(available_dir)
         if chosen_dir == 0:
