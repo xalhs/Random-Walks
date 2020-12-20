@@ -348,7 +348,7 @@ print("plotting self avoiding XY coordinates")
 ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=50)
 
-ani.save('4Drandom_self_avoiding_walk2_XY.mp4')
+ani.save('../media/4Drandom_self_avoiding_walk2_XY.mp4')
 #plt.show()
 
 height = 40
@@ -407,7 +407,7 @@ ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=50)
 
 
-ani.save('4Drandom_self_avoiding_walk2_ZW.mp4')
+ani.save('../media/4Drandom_self_avoiding_walk2_ZW.mp4')
 
 plt.show()
 
@@ -468,7 +468,7 @@ ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=50)
 
 
-ani.save('4D_random_walk2_XY.mp4')
+ani.save('../media/4D_random_walk2_XY.mp4')
 
 #plt.show()
 
@@ -528,6 +528,6 @@ ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=50)
 
 
-ani.save('4D_random_walk2_WZ.mp4')
+ani.save('../media/4D_random_walk2_WZ.mp4')
 
 #plt.show()

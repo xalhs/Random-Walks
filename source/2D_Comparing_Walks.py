@@ -253,7 +253,7 @@ def update(points):
 ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=5)
 print("plotting self avoiding graph")
-ani.save('2D_Self_Avoiding.mp4')
+ani.save('../media/2D_Self_Avoiding.mp4')
 #plt.show()
 
 
@@ -308,6 +308,6 @@ ani = animation.FuncAnimation(fig, update, frames=points,
                              init_func=init, blit=True, repeat=False, interval=5)
 
 print("plotting simple walk graph")
-ani.save('2D_Random_Walk.mp4')
+ani.save('../media/2D_Random_Walk.mp4')
 
 #plt.show()
