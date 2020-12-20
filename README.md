@@ -15,6 +15,14 @@ Go to `source/` and run any of the following 3 scripts:
 
 ## Detailed explanation
 
+### 3D Simulation
+
+Some screenshots from the 3D animaption:
+
+![](https://github.com/xalhs/Random-Walks/blob/master/media/3d_screenshot_1.png)
+
+![](https://github.com/xalhs/Random-Walks/blob/master/media/3d_screenshot_2.png)
+
 ## Directory structure
 
 - [`media/`](https://github.com/xalhs/Random-Walks/tree/master/media): directory containing media files that were produces as output from the scripts.
