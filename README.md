@@ -16,15 +16,39 @@ Go to `source/` and run any of the following 3 scripts:
 ## Detailed explanation
 These simulations focus mainly on Self Avoiding Random Walks and comparisons to Simple Random Walks. A simple random walk on an n-dimensional Cartesian grid just has a 1/(2n) probability of going into each neighboring node. A self avoiding walk is this with the exception that it cannot revisit nodes that have been visited before (like the game snake). Now for each of the programs
 
-Random_walk.py just does a regular random walk, having a 1/4 probability of going to each direction on every step. Then it plots the whole thing
+`random_walk.py` just does a regular random walk, having a 1/4 probability of going to each direction on every step. Then it plots the whole thing
 
-random_self_avoiding.py does something similar, only it "remembers" all previously visited nodes and prevents the algorithm from going there again. Naturally this creates situations where the algorithm has no available points to go, to overcome this every once in a while it checks if it is in a safe position and if so it stores that position so that it can backtrack there if stuck. 
+`random_self_avoiding.py` does something similar, only it "remembers" all previously visited nodes and prevents the algorithm from going there again. Naturally this creates situations where the algorithm has no available points to go, to overcome this every once in a while it checks if it is in a safe position and if so it stores that position so that it can backtrack there if stuck. 
 
-2d_comparing_walks.py runs both the simple random walk and self avoiding one and creates an mp4 file for each of those. The borders of the simulation are the same for these mp4s so sizes can be compared. The purpose is to see how different these two types of walks look in two dimensions, where the simple random walk confines to a small area, rarely moving outside of it, the self avoiding walk covers large distances and "closes off" big areas that it cannot visit again
+`2D_Comparing_Walks.py` runs both the simple random walk and self avoiding one and creates an mp4 file for each of those. The borders of the simulation are the same for these mp4s so sizes can be compared. The purpose is to see how different these two types of walks look in two dimensions, where the simple random walk confines to a small area, rarely moving outside of it, the self avoiding walk covers large distances and "closes off" big areas that it cannot visit again
 
-3d_random_walk.py creates a self avoiding random walk in a 3 dimensional grid. It follows the same rules as the 2d self avoiding random walk and it creates savepoints once in a while. The difference is that since the algorithm runs in 3 dimensions, it is much harder to get stuck so the need to backtrack is significantly reduced. At the end, it visualizes the random walk in a 3D figure, the figure can be turned to view from different angles and after the animation finishes it can be zoomed into to see the structure of the random walk path better. Screenshots from the 3d algorithm can be seen below
+`3D_Random_Walk.py` creates a self avoiding random walk in a 3 dimensional grid. It follows the same rules as the 2d self avoiding random walk and it creates savepoints once in a while. The difference is that since the algorithm runs in 3 dimensions, it is much harder to get stuck so the need to backtrack is significantly reduced. At the end, it visualizes the random walk in a 3D figure, the figure can be turned to view from different angles and after the animation finishes it can be zoomed into to see the structure of the random walk path better. Screenshots from the 3d algorithm can be seen below
 
-4d_random_walk.py operates much like 2d_comparing_walks.py since it creates media for the self avoiding and the simple random walk. However since we cannot visualize 4 dimensions, the media are split in 2 projections for each walk for a total of 4 mp4 files. The first have the "XY" directions for each walk and the second have the "ZW" directions, "W" is the name I used for the 4th dimensional parameter. The purpose here is to see that in 4 dimensions the simple and the self avoiding walks cannot be distinguished easily (and on the scale of this simulation cannot be distinguished at all), thus the 4 projections will look statistically the same. 
+`4D_Random_Walk.py` operates much like 2d_comparing_walks.py since it creates media for the self avoiding and the simple random walk. However since we cannot visualize 4 dimensions, the media are split in 2 projections for each walk for a total of 4 mp4 files. The first have the "XY" directions for each walk and the second have the "ZW" directions, "W" is the name I used for the 4th dimensional parameter. The purpose here is to see that in 4 dimensions the simple and the self avoiding walks cannot be distinguished easily (and on the scale of this simulation cannot be distinguished at all), thus the 4 projections will look statistically the same. 
+
+### 2D Simulation
+Here you can see some screenshots from the 2D walks:
+
+First a beautiful simple random walk with about a million steps
+![](https://github.com/xalhs/Random-Walks/blob/master/media/simple_random_walk_large_scale.png)
+
+And then some Simple and Self avoiding walks in similar between them scales
+At 200k steps:
+Simple random walk
+![](https://github.com/xalhs/Random-Walks/blob/master/media/simple_random%20_walk_200k_steps.png)
+And the self avoiding one
+![](https://github.com/xalhs/Random-Walks/blob/master/media/Self_avoiding_200k_steps.png)
+
+And at 193k steps:
+Simple
+![](https://github.com/xalhs/Random-Walks/blob/master/media/Simple_random_walk_193k_steps.png)
+Self avoiding
+![](https://github.com/xalhs/Random-Walks/blob/master/media/Self_avoiding_193k_steps.png)
+
+Unfortunately from these screenshots you can't really compare the size difference between the two, if they were to scale it would look like this
+(the simple walk can be seen in orange at the center):
+![](https://github.com/xalhs/Random-Walks/blob/master/media/Comparing_Simple_and_Self_Avoiding_at_193k_steps.png)
+
 
 
 ### 3D Simulation
