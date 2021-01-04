@@ -32,7 +32,7 @@ Here you can see some screenshots from the 2D walks:
 First a beautiful simple random walk with about a million steps
 ![](https://github.com/xalhs/Random-Walks/blob/master/media/simple_random_walk_large_scale.png)
 
-And then some Simple and Self avoiding walks in similar between them scales
+And then some Simple and Self avoiding walks with similar between them stepcount
 At 200k steps:
 Simple random walk
 ![](https://github.com/xalhs/Random-Walks/blob/master/media/simple_random%20_walk_200k_steps.png)
